@@ -3,10 +3,12 @@
   "name": "ai.xpoz/social-insights",
   "title": "Social Media Search API — Twitter, Instagram, Reddit, TikTok (XPOZ)",
   "description": "Twitter/X, Instagram, Reddit & TikTok data for AI agents. 1.5B+ posts. No API keys.",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "websiteUrl": "https://www.xpoz.ai",
   "repository": {
-    "url": "https://github.com/XPOZpublic/xpoz-mcp"
+    "url": "https://github.com/xpozpublic/xpoz-mcp",
+    "source": "github",
+    "id": "1156331316"
   },
   "remotes": [
     {
