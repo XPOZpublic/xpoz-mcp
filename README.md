@@ -1,6 +1,6 @@
 # Xpoz MCP Server
 
-**Search Twitter, Instagram, Reddit & TikTok from any AI agent.** 1.5B+ posts indexed. Natural language queries. CSV exports up to 64K rows. No API keys needed.
+**Search Twitter, Instagram, Reddit & TikTok from any AI agent.** 1.5B+ posts indexed. Natural language queries. CSV exports up to 500K rows. No API keys needed.
 
 [![MCP Registry](https://img.shields.io/badge/MCP_Registry-listed-blue)](https://registry.modelcontextprotocol.io/?q=xpoz)
 [![Website](https://img.shields.io/badge/xpoz.ai-visit-green)](https://xpoz.ai)
@@ -87,7 +87,7 @@ Then authenticate via the OAuth link when prompted.
 ## Key Features
 
 - **Natural language queries** — describe what you want, Xpoz optimizes the search
-- **CSV exports** — up to 64K rows in a single download via async operations
+- **CSV exports** — up to 500K rows in a single download via async operations
 - **Server-side pagination** — handle large result sets efficiently
 - **Field selection** — request only the fields you need
 - **Cache control** — `forceLatest: true` bypasses cache for real-time data
