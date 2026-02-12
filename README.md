@@ -113,7 +113,7 @@ Then authenticate via the OAuth link when prompted.
 
 - 🌐 [xpoz.ai](https://xpoz.ai)
 - 📦 [MCP Registry](https://registry.modelcontextprotocol.io/?q=xpoz)
-- 🛠️ [ClawHub Skills](https://clawhub.ai/skills?q=xpoz)
+- 🛠️ [ClawHub Skills](https://clawhub.ai/u/atyachin)
 - 📖 [Documentation](https://www.xpoz.ai)
 
 ## License
