@@ -2,7 +2,7 @@
 
 **Search Twitter, Instagram, Reddit & TikTok from any AI agent.** 1.5B+ posts indexed. Natural language queries. CSV exports up to 64K rows. No API keys needed.
 
-[![MCP Registry](https://img.shields.io/badge/MCP_Registry-listed-blue)](https://registry.modelcontextprotocol.io/servers/ai.xpoz/social-insights)
+[![MCP Registry](https://img.shields.io/badge/MCP_Registry-listed-blue)](https://registry.modelcontextprotocol.io/?q=xpoz)
 [![Website](https://img.shields.io/badge/xpoz.ai-visit-green)](https://xpoz.ai)
 
 > **Remote MCP server** — no local installation required. Connect via Streamable HTTP and authenticate with Google OAuth.
@@ -112,9 +112,9 @@ Then authenticate via the OAuth link when prompted.
 ## Links
 
 - 🌐 [xpoz.ai](https://xpoz.ai)
-- 📦 [MCP Registry](https://registry.modelcontextprotocol.io/servers/ai.xpoz/social-insights)
-- 🛠️ [ClawHub Skills](https://clawhub.com/skills?q=xpoz)
-- 📖 [Documentation](https://docs.xpoz.ai)
+- 📦 [MCP Registry](https://registry.modelcontextprotocol.io/?q=xpoz)
+- 🛠️ [ClawHub Skills](https://clawhub.ai/skills?q=xpoz)
+- 📖 [Documentation](https://www.xpoz.ai)
 
 ## License
 
