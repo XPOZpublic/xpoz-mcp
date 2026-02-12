@@ -118,4 +118,4 @@ Then authenticate via the OAuth link when prompted.
 
 ## License
 
-This repository contains configuration and documentation only. The Xpoz MCP server is a hosted service — see [Terms of Service](https://www.xpoz.ai/tos).
+This repository contains configuration and documentation only. The Xpoz MCP server is a hosted service — see [Terms of Service](https://www.xpoz.ai/terms).
