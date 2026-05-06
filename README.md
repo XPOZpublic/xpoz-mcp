@@ -171,17 +171,6 @@ For continuous brand monitoring and lead generation — Xpoz indexes new matchin
 - **Expert finding** — discover domain authorities across platforms
 - **Security intelligence** — monitor vulnerability discussions before CVEs publish
 
-## Pricing
-
-| Plan | Price | Monthly results | Tracked items |
-|---|---|---|---|
-| Free | $0 | 100,000 | 1 |
-| Pro | $20/mo | 1,000,000 | 10 |
-| Max | $200/mo | 10,000,000 | 30 |
-| Enterprise | custom | custom | custom |
-
-All platforms and tools are included on every paid plan. See [xpoz.ai/pricing](https://www.xpoz.ai/pricing) and [xpoz.ai/rate-limits](https://www.xpoz.ai/rate-limits) for full details.
-
 ## Discovery surfaces (for AI agents and scanners)
 
 These public, machine-readable endpoints describe Xpoz to crawlers and agentic clients:
@@ -200,6 +189,7 @@ These public, machine-readable endpoints describe Xpoz to crawlers and agentic c
 ## Links
 
 - 🌐 [xpoz.ai](https://xpoz.ai)
+- 💰 [Pricing](https://www.xpoz.ai/pricing)
 - 📦 [MCP Registry](https://registry.modelcontextprotocol.io/?q=xpoz)
 - 🛠️ [ClawHub Skills](https://clawhub.ai/u/atyachin)
 - 📖 [Documentation](https://help.xpoz.ai)
