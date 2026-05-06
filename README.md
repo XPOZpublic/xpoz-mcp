@@ -47,13 +47,35 @@ Then authenticate via the OAuth link when prompted. Eight more pre-built skills 
 
 If you'd rather call Xpoz directly from code or a terminal instead of through an MCP client:
 
-| Tool | Install | Source |
-|---|---|---|
-| TypeScript / Node.js | `npm install @xpoz/xpoz` | [`XPOZpublic/xpoz-ts-sdk`](https://github.com/XPOZpublic/xpoz-ts-sdk) |
-| Python | `pip install xpoz` | [`XPOZpublic/xpoz-python-sdk`](https://github.com/XPOZpublic/xpoz-python-sdk) |
-| CLI (any platform) | `brew install XPOZpublic/xpoz/xpoz-cli` | [`XPOZpublic/xpoz-cli`](https://github.com/XPOZpublic/xpoz-cli) |
+### TypeScript / Node.js
 
-All three speak the same MCP protocol against `https://mcp.xpoz.ai/mcp` under the hood, so any tool you see below is reachable from every surface. Get an API token at [`xpoz.ai/get-token`](https://www.xpoz.ai/get-token).
+```bash
+npm install @xpoz/xpoz
+```
+
+Source: [`XPOZpublic/xpoz-ts-sdk`](https://github.com/XPOZpublic/xpoz-ts-sdk).
+
+### Python
+
+```bash
+pip install xpoz
+```
+
+Source: [`XPOZpublic/xpoz-python-sdk`](https://github.com/XPOZpublic/xpoz-python-sdk).
+
+### CLI
+
+| Platform | Install command |
+|---|---|
+| macOS / Linux (Homebrew) | `brew install XPOZpublic/xpoz/xpoz-cli` |
+| macOS / Linux (one-liner) | `curl -fsSL https://raw.githubusercontent.com/XPOZpublic/xpoz-cli/main/install.sh \| sh` |
+| Windows (PowerShell) | `iwr -useb https://raw.githubusercontent.com/XPOZpublic/xpoz-cli/main/install.ps1 \| iex` |
+| Windows (winget) | `winget install Xpoz.XpozCli` |
+| Any platform with Python ≥ 3.10 | `pip install xpoz-cli` |
+
+Source: [`XPOZpublic/xpoz-cli`](https://github.com/XPOZpublic/xpoz-cli).
+
+All four channels speak the same MCP protocol against `https://mcp.xpoz.ai/mcp` under the hood, so any tool you see below is reachable from every surface. Get an API token at [`xpoz.ai/get-token`](https://www.xpoz.ai/get-token).
 
 ---
 
