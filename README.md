@@ -47,13 +47,35 @@ Then authenticate via the OAuth link when prompted. Eight more pre-built skills 
 
 If you'd rather call Xpoz directly from code or a terminal instead of through an MCP client:
 
-| Tool | Install | Source |
-|---|---|---|
-| TypeScript / Node.js | `npm install @xpoz/xpoz` | [`XPOZpublic/xpoz-ts-sdk`](https://github.com/XPOZpublic/xpoz-ts-sdk) |
-| Python | `pip install xpoz` | [`XPOZpublic/xpoz-python-sdk`](https://github.com/XPOZpublic/xpoz-python-sdk) |
-| CLI (any platform) | `brew install XPOZpublic/xpoz/xpoz-cli` | [`XPOZpublic/xpoz-cli`](https://github.com/XPOZpublic/xpoz-cli) |
+### TypeScript / Node.js
 
-All three speak the same MCP protocol against `https://mcp.xpoz.ai/mcp` under the hood, so any tool you see below is reachable from every surface. Get an API token at [`xpoz.ai/get-token`](https://www.xpoz.ai/get-token).
+```bash
+npm install @xpoz/xpoz
+```
+
+Source: [`XPOZpublic/xpoz-ts-sdk`](https://github.com/XPOZpublic/xpoz-ts-sdk).
+
+### Python
+
+```bash
+pip install xpoz
+```
+
+Source: [`XPOZpublic/xpoz-python-sdk`](https://github.com/XPOZpublic/xpoz-python-sdk).
+
+### CLI
+
+| Platform | Install command |
+|---|---|
+| macOS / Linux (Homebrew) | `brew install XPOZpublic/xpoz/xpoz-cli` |
+| macOS / Linux (one-liner) | `curl -fsSL https://raw.githubusercontent.com/XPOZpublic/xpoz-cli/main/install.sh \| sh` |
+| Windows (PowerShell) | `iwr -useb https://raw.githubusercontent.com/XPOZpublic/xpoz-cli/main/install.ps1 \| iex` |
+| Windows (winget) | `winget install Xpoz.XpozCli` |
+| Any platform with Python ≥ 3.10 | `pip install xpoz-cli` |
+
+Source: [`XPOZpublic/xpoz-cli`](https://github.com/XPOZpublic/xpoz-cli).
+
+All four channels speak the same MCP protocol against `https://mcp.xpoz.ai/mcp` under the hood, so any tool you see below is reachable from every surface. Get an API token at [`xpoz.ai/get-token`](https://www.xpoz.ai/get-token).
 
 ---
 
@@ -149,17 +171,6 @@ For continuous brand monitoring and lead generation — Xpoz indexes new matchin
 - **Expert finding** — discover domain authorities across platforms
 - **Security intelligence** — monitor vulnerability discussions before CVEs publish
 
-## Pricing
-
-| Plan | Price | Monthly results | Tracked items |
-|---|---|---|---|
-| Free | $0 | 100,000 | 1 |
-| Pro | $20/mo | 1,000,000 | 10 |
-| Max | $200/mo | 10,000,000 | 30 |
-| Enterprise | custom | custom | custom |
-
-All platforms and tools are included on every paid plan. See [xpoz.ai/pricing](https://www.xpoz.ai/pricing) and [xpoz.ai/rate-limits](https://www.xpoz.ai/rate-limits) for full details.
-
 ## Discovery surfaces (for AI agents and scanners)
 
 These public, machine-readable endpoints describe Xpoz to crawlers and agentic clients:
@@ -178,6 +189,7 @@ These public, machine-readable endpoints describe Xpoz to crawlers and agentic c
 ## Links
 
 - 🌐 [xpoz.ai](https://xpoz.ai)
+- 💰 [Pricing](https://www.xpoz.ai/pricing)
 - 📦 [MCP Registry](https://registry.modelcontextprotocol.io/?q=xpoz)
 - 🛠️ [ClawHub Skills](https://clawhub.ai/u/atyachin)
 - 📖 [Documentation](https://help.xpoz.ai)
