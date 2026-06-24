@@ -41,6 +41,32 @@ clawhub install xpoz-social-search
 
 Then authenticate via the OAuth link when prompted. Eight more pre-built skills are available — see [`clawhub.ai/u/atyachin`](https://clawhub.ai/u/atyachin).
 
+### Try it without signing up
+
+Want to kick the tires first? Mint a free trial token — no sign-in required, valid for 5 days. It returns a limited set of results so you can see the server in action:
+
+```bash
+# Get a trial token (starts with "TRIAL")
+curl -X POST https://api.xpoz.ai/api/trial/token
+# -> { "success": true, "data": { "accessKey": "TRIAL...", "expiresInSeconds": 432000 }, ... }
+```
+
+Skip the OAuth flow by passing the trial token as a bearer header in your MCP config:
+
+```json
+{
+  "mcpServers": {
+    "xpoz": {
+      "type": "streamable-http",
+      "url": "https://mcp.xpoz.ai/mcp",
+      "headers": { "Authorization": "Bearer TRIAL..." }
+    }
+  }
+}
+```
+
+For full results, [grab your own API key](https://www.xpoz.ai/get-token) or just connect via OAuth as shown above.
+
 ---
 
 ## SDKs & CLI
