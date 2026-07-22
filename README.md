@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/xpozpublic-xpoz-mcp-badge.png)](https://mseep.ai/app/xpozpublic-xpoz-mcp)
+
 # Xpoz MCP Server
 
 **Search Twitter, Instagram, Reddit & TikTok from any AI agent.** Billions of posts indexed. Natural language queries. CSV exports up to 500K rows. No API keys needed.
