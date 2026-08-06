@@ -1,5 +1,7 @@
 # Xpoz MCP Server
 
+[![MCP Queen operational grade](https://mcpqueen.com/badge/ai.xpoz/social-insights.svg)](https://mcpqueen.com/s/ai.xpoz/social-insights)
+
 **Search Twitter, Instagram, Reddit & TikTok from any AI agent.** Billions of posts indexed. Natural language queries. CSV exports up to 500K rows. No API keys needed.
 
 [![MCP Registry](https://img.shields.io/badge/MCP_Registry-listed-blue)](https://registry.modelcontextprotocol.io/?q=xpoz)
