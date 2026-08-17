@@ -15,5 +15,35 @@
       "type": "streamable-http",
       "url": "https://mcp.xpoz.ai/mcp"
     }
-  ]
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "asm": {
+        "asm_version": "0.3",
+        "service_id": "ai.xpoz/social-insights@1.4.0",
+        "taxonomy": "tool.data.search",
+        "display_name": "Xpoz Social Insights MCP",
+        "invocation": {
+          "interface": "mcp",
+          "reach": "cloud",
+          "agent_operable": true,
+          "auth_to_invoke": "oauth_or_trial_bearer_token",
+          "agent_completable_setup": true,
+          "platforms": [
+            "any"
+          ],
+          "docs_url": "https://github.com/XPOZpublic/xpoz-mcp/blob/65cbd90da5840391f2b83b141560ef431cb242d3/README.md"
+        },
+        "payment": {
+          "methods": [
+            "free_tier",
+            "subscription"
+          ],
+          "auth_type": "oauth2",
+          "signup_url": "https://www.xpoz.ai/pricing/"
+        }
+      },
+      "asm_url": "https://raw.githubusercontent.com/XPOZpublic/xpoz-mcp/main/asm.json"
+    }
+  }
 }

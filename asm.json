@@ -1,0 +1,91 @@
+{
+  "asm_version": "0.3",
+  "service_id": "ai.xpoz/social-insights@1.4.0",
+  "taxonomy": "tool.data.search",
+  "display_name": "Xpoz Social Insights MCP",
+  "provenance": {
+    "source_url": "https://www.xpoz.ai/rate-limits/",
+    "retrieved_at": "2026-08-17T01:40:10Z",
+    "last_verified_at": "2026-08-17T01:40:10Z",
+    "verification_status": "self_reported",
+    "notes": "Rate and monthly-result limits come from the publisher's rate-limit contract. Invocation, OAuth, trial-token, and tool side-effect facts were cross-checked against README.md at repository commit 65cbd90da5840391f2b83b141560ef431cb242d3. Pricing is intentionally omitted: the official pricing page combines subscriptions, platform-specific credits, overages, and monthly/yearly billing, which should not be collapsed into one scalar price."
+  },
+  "invocation": {
+    "interface": "mcp",
+    "reach": "cloud",
+    "agent_operable": true,
+    "auth_to_invoke": "oauth_or_trial_bearer_token",
+    "agent_completable_setup": true,
+    "platforms": [
+      "any"
+    ],
+    "docs_url": "https://github.com/XPOZpublic/xpoz-mcp/blob/65cbd90da5840391f2b83b141560ef431cb242d3/README.md"
+  },
+  "sla": {
+    "rate_limit": "Free: 30 req/min, 2 concurrent, 100,000 results/month; Pro: 120 req/min, 6 concurrent, 1,000,000 results/month; Max: 600 req/min, 20 concurrent, 10,000,000 results/month; Enterprise: custom"
+  },
+  "payment": {
+    "methods": [
+      "free_tier",
+      "subscription"
+    ],
+    "auth_type": "oauth2",
+    "signup_url": "https://www.xpoz.ai/pricing/"
+  },
+  "operational_constraints": {
+    "risk_class": "medium",
+    "side_effects": [
+      "external_api_call",
+      "network_access",
+      "persistent_state"
+    ],
+    "approval": {
+      "required": "conditional",
+      "conditions": [
+        "tool is addTrackedItems, removeTrackedItems, or cancelOperation"
+      ],
+      "human_readable": "Search tools are read-oriented; tracking and cancellation tools mutate server-side state and may warrant local approval."
+    },
+    "quotas": [
+      {
+        "dimension": "result",
+        "limit": 100000,
+        "period": "monthly",
+        "scope": "free plan account"
+      },
+      {
+        "dimension": "result",
+        "limit": 1000000,
+        "period": "monthly",
+        "scope": "pro plan account"
+      },
+      {
+        "dimension": "result",
+        "limit": 10000000,
+        "period": "monthly",
+        "scope": "max plan account"
+      }
+    ],
+    "rate_limits": [
+      {
+        "dimension": "request",
+        "limit": 30,
+        "period": "minute",
+        "scope": "free plan account"
+      },
+      {
+        "dimension": "request",
+        "limit": 120,
+        "period": "minute",
+        "scope": "pro plan account"
+      },
+      {
+        "dimension": "request",
+        "limit": 600,
+        "period": "minute",
+        "scope": "max plan account"
+      }
+    ],
+    "policy_notes": "Enterprise limits are custom. Consumers should use retry_after_ms or Retry-After after HTTP 429 and apply their own approval policy. No latency, uptime, quality, or ASM receipt support is claimed."
+  }
+}
