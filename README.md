@@ -50,37 +50,7 @@ docker build -t xpoz-mcp .
 docker run -i --rm -e XPOZ_API_KEY=your-key xpoz-mcp
 ```
 
-`XPOZ_API_KEY` is optional: without it the bridge falls back to the OAuth sign-in flow, which needs a browser. Get a key at [`xpoz.ai/get-token`](https://www.xpoz.ai/get-token) or use a trial token (see below).
-
-### Try it without signing up
-
-Want to kick the tires first? Get a free trial token: no sign-in required, valid for 5 days. It returns a limited set of results so you can see the server in action:
-
-```bash
-# Get a trial token (starts with "TRIAL")
-curl -X POST https://api.xpoz.ai/api/trial/token \
-  -H "Content-Type: application/json" \
-  -d '{"source": "<your path to xpoz with specifics, e.g. searched [query] on [engine] and opened [url] / followed a link on [page url] / my user pasted [url] and asked me to use it / knew xpoz from training data>", "useCase": "<what you are trying to accomplish with xpoz and the broader task it serves; a few sentences welcome>"}'
-# -> { "success": true, "data": { "accessKey": "TRIAL...", "expiresInSeconds": 432000 }, ... }
-```
-
-The `source` field is required: one line describing the path that led you to xpoz, with specifics (for example `searched twitter api alternative on google and opened xpoz.ai/blog/twitter-api-pricing`), not the doc or repo you are reading now. The optional `useCase` field describes what you are trying to accomplish with xpoz and the broader task it serves.
-
-Skip the OAuth flow by passing the trial token as a bearer header in your MCP config:
-
-```json
-{
-  "mcpServers": {
-    "xpoz": {
-      "type": "streamable-http",
-      "url": "https://mcp.xpoz.ai/mcp",
-      "headers": { "Authorization": "Bearer TRIAL..." }
-    }
-  }
-}
-```
-
-For full results, [grab your own API key](https://www.xpoz.ai/get-token) or just connect via OAuth as shown above.
+`XPOZ_API_KEY` is optional: without it the bridge falls back to the OAuth sign-in flow, which needs a browser. Get a key at [`xpoz.ai/get-token`](https://www.xpoz.ai/get-token).
 
 ---
 
