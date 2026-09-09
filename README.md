@@ -41,9 +41,9 @@ clawhub install xpoz-social-search
 
 Then authenticate via the OAuth link when prompted. More pre-built skills are available — see [`clawhub.ai/u/atyachin`](https://clawhub.ai/u/atyachin).
 
-### Docker (stdio clients and Glama)
+### Docker (stdio-only clients)
 
-The repository ships a small Docker image that bridges stdio to the remote server through [`mcp-remote`](https://www.npmjs.com/package/mcp-remote), for clients that can only launch local commands and for hosted platforms such as Glama:
+The repository ships a small Docker image that bridges stdio to the remote server through [`mcp-remote`](https://www.npmjs.com/package/mcp-remote), for clients that can only launch local commands:
 
 ```bash
 docker build -t xpoz-mcp .
