@@ -2,7 +2,7 @@
   "$schema": "https://glama.ai/mcp/schemas/server.json",
   "name": "xpoz-mcp",
   "display_name": "Xpoz MCP Server",
-  "description": "Search Twitter/X, Instagram, Reddit, and TikTok from AI agents. 48 tools for keyword and hashtag search, user profiles, posts, comments, follower connections, and tracking. Billions of posts indexed, natural-language queries, CSV export up to 500K rows. Remote server (Streamable HTTP) with OAuth sign-in, no API keys needed.",
+  "description": "Search Twitter/X, Instagram, Reddit, and TikTok from AI agents. 52 tools for keyword and hashtag search, user profiles, posts, comments, follower connections, and tracking. Billions of posts indexed, natural-language queries, CSV export up to 500K rows. Remote server (Streamable HTTP) with OAuth sign-in, no API keys needed.",
   "version": "3.2.5",
   "license": "MIT",
   "author": "Xpoz",
